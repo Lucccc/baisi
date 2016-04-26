@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		1828110F1CCFB2370073507B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1828110E1CCFB2370073507B /* main.m */; };
 		182811121CCFB2370073507B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811111CCFB2370073507B /* AppDelegate.m */; };
-		182811151CCFB2370073507B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811141CCFB2370073507B /* ViewController.m */; };
-		182811181CCFB2370073507B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182811161CCFB2370073507B /* Main.storyboard */; };
 		1828111A1CCFB2370073507B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182811191CCFB2370073507B /* Assets.xcassets */; };
-		1828111D1CCFB2370073507B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1828111B1CCFB2370073507B /* LaunchScreen.storyboard */; };
 		182811281CCFB2370073507B /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811271CCFB2370073507B /* _____Tests.m */; };
 		182811331CCFB2370073507B /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811321CCFB2370073507B /* _____UITests.m */; };
+		182811421CCFBAE10073507B /* GLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811411CCFBAE10073507B /* GLTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +37,7 @@
 		1828110E1CCFB2370073507B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		182811101CCFB2370073507B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		182811111CCFB2370073507B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		182811131CCFB2370073507B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		182811141CCFB2370073507B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		182811171CCFB2370073507B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		182811191CCFB2370073507B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1828111C1CCFB2370073507B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1828111E1CCFB2370073507B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182811231CCFB2370073507B /* 百思不得姐Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		182811271CCFB2370073507B /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
@@ -51,6 +45,8 @@
 		1828112E1CCFB2370073507B /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		182811321CCFB2370073507B /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		182811341CCFB2370073507B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182811401CCFBAE10073507B /* GLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTabBarController.h; sourceTree = "<group>"; };
+		182811411CCFBAE10073507B /* GLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +99,8 @@
 			children = (
 				182811101CCFB2370073507B /* AppDelegate.h */,
 				182811111CCFB2370073507B /* AppDelegate.m */,
-				182811131CCFB2370073507B /* ViewController.h */,
-				182811141CCFB2370073507B /* ViewController.m */,
-				182811161CCFB2370073507B /* Main.storyboard */,
-				182811191CCFB2370073507B /* Assets.xcassets */,
-				1828111B1CCFB2370073507B /* LaunchScreen.storyboard */,
-				1828111E1CCFB2370073507B /* Info.plist */,
+				182811401CCFBAE10073507B /* GLTabBarController.h */,
+				182811411CCFBAE10073507B /* GLTabBarController.m */,
 				1828110D1CCFB2370073507B /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -117,6 +109,8 @@
 		1828110D1CCFB2370073507B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				182811191CCFB2370073507B /* Assets.xcassets */,
+				1828111E1CCFB2370073507B /* Info.plist */,
 				1828110E1CCFB2370073507B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -246,9 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1828111D1CCFB2370073507B /* LaunchScreen.storyboard in Resources */,
 				1828111A1CCFB2370073507B /* Assets.xcassets in Resources */,
-				182811181CCFB2370073507B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				182811151CCFB2370073507B /* ViewController.m in Sources */,
 				182811121CCFB2370073507B /* AppDelegate.m in Sources */,
 				1828110F1CCFB2370073507B /* main.m in Sources */,
+				182811421CCFBAE10073507B /* GLTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,25 +301,6 @@
 			targetProxy = 1828112F1CCFB2370073507B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		182811161CCFB2370073507B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				182811171CCFB2370073507B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1828111B1CCFB2370073507B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1828111C1CCFB2370073507B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		182811351CCFB2370073507B /* Debug */ = {
@@ -416,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "luc.-----";
@@ -427,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "luc.-----";
