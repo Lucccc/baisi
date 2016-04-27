@@ -13,6 +13,12 @@
 		182811281CCFB2370073507B /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811271CCFB2370073507B /* _____Tests.m */; };
 		182811331CCFB2370073507B /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811321CCFB2370073507B /* _____UITests.m */; };
 		182811421CCFBAE10073507B /* GLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811411CCFBAE10073507B /* GLTabBarController.m */; };
+		182811451CCFC4BA0073507B /* GLEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811441CCFC4BA0073507B /* GLEssenceViewController.m */; };
+		182811481CCFC4DA0073507B /* GLNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811471CCFC4DA0073507B /* GLNewViewController.m */; };
+		1828114B1CCFC4EE0073507B /* GLFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1828114A1CCFC4EE0073507B /* GLFriendTrendsViewController.m */; };
+		1828114E1CCFC4FD0073507B /* GLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1828114D1CCFC4FD0073507B /* GLMeViewController.m */; };
+		182811511CCFC90E0073507B /* GLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811501CCFC90E0073507B /* GLTabBar.m */; };
+		182811541CCFD16C0073507B /* UIView+GLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811531CCFD16C0073507B /* UIView+GLExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,19 @@
 		182811341CCFB2370073507B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182811401CCFBAE10073507B /* GLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTabBarController.h; sourceTree = "<group>"; };
 		182811411CCFBAE10073507B /* GLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTabBarController.m; sourceTree = "<group>"; };
+		182811431CCFC4BA0073507B /* GLEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLEssenceViewController.h; sourceTree = "<group>"; };
+		182811441CCFC4BA0073507B /* GLEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLEssenceViewController.m; sourceTree = "<group>"; };
+		182811461CCFC4DA0073507B /* GLNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLNewViewController.h; sourceTree = "<group>"; };
+		182811471CCFC4DA0073507B /* GLNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLNewViewController.m; sourceTree = "<group>"; };
+		182811491CCFC4EE0073507B /* GLFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFriendTrendsViewController.h; sourceTree = "<group>"; };
+		1828114A1CCFC4EE0073507B /* GLFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLFriendTrendsViewController.m; sourceTree = "<group>"; };
+		1828114C1CCFC4FD0073507B /* GLMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMeViewController.h; sourceTree = "<group>"; };
+		1828114D1CCFC4FD0073507B /* GLMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLMeViewController.m; sourceTree = "<group>"; };
+		1828114F1CCFC90E0073507B /* GLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTabBar.h; sourceTree = "<group>"; };
+		182811501CCFC90E0073507B /* GLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTabBar.m; sourceTree = "<group>"; };
+		182811521CCFD16C0073507B /* UIView+GLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GLExtension.h"; sourceTree = "<group>"; };
+		182811531CCFD16C0073507B /* UIView+GLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GLExtension.m"; sourceTree = "<group>"; };
+		182811551CCFD19A0073507B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +120,20 @@
 				182811111CCFB2370073507B /* AppDelegate.m */,
 				182811401CCFBAE10073507B /* GLTabBarController.h */,
 				182811411CCFBAE10073507B /* GLTabBarController.m */,
+				182811431CCFC4BA0073507B /* GLEssenceViewController.h */,
+				182811441CCFC4BA0073507B /* GLEssenceViewController.m */,
+				182811461CCFC4DA0073507B /* GLNewViewController.h */,
+				182811471CCFC4DA0073507B /* GLNewViewController.m */,
+				182811491CCFC4EE0073507B /* GLFriendTrendsViewController.h */,
+				1828114A1CCFC4EE0073507B /* GLFriendTrendsViewController.m */,
+				1828114C1CCFC4FD0073507B /* GLMeViewController.h */,
+				1828114D1CCFC4FD0073507B /* GLMeViewController.m */,
+				1828114F1CCFC90E0073507B /* GLTabBar.h */,
+				182811501CCFC90E0073507B /* GLTabBar.m */,
 				1828110D1CCFB2370073507B /* Supporting Files */,
+				182811521CCFD16C0073507B /* UIView+GLExtension.h */,
+				182811531CCFD16C0073507B /* UIView+GLExtension.m */,
+				182811551CCFD19A0073507B /* PrefixHeader.pch */,
 			);
 			path = "百思不得姐";
 			sourceTree = "<group>";
@@ -265,6 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182811481CCFC4DA0073507B /* GLNewViewController.m in Sources */,
+				182811541CCFD16C0073507B /* UIView+GLExtension.m in Sources */,
+				1828114B1CCFC4EE0073507B /* GLFriendTrendsViewController.m in Sources */,
+				182811451CCFC4BA0073507B /* GLEssenceViewController.m in Sources */,
+				1828114E1CCFC4FD0073507B /* GLMeViewController.m in Sources */,
+				182811511CCFC90E0073507B /* GLTabBar.m in Sources */,
 				182811121CCFB2370073507B /* AppDelegate.m in Sources */,
 				1828110F1CCFB2370073507B /* main.m in Sources */,
 				182811421CCFBAE10073507B /* GLTabBarController.m in Sources */,
@@ -390,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "luc.-----";
@@ -402,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "luc.-----";
