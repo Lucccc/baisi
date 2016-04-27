@@ -38,6 +38,8 @@
     [self setupChilVC:[[GLMeViewController alloc]init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
     //更换tabBar
     [self setValue:[[GLTabBar alloc]init] forKey:@"tabBar"];
+   
+    
     
 //    UIViewController *vc01 = [[UIViewController alloc]init];
 //    vc01.tabBarItem.title = @"精华";
@@ -85,12 +87,19 @@
  */
 -(void)setupChilVC: (UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage{
    
+    vc.navigationItem.title = title;
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
-    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100.0 alpha:1.0];
-    //添加为子控制器
-    [self addChildViewController:vc];
+    //vc.view.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1.0];
+    
+    
+    //包装一个导航控制器 添加导航控制器tabbarcontroller的子控制器
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    
+    //设置导航背景颜色
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    [self addChildViewController:nav];
 
     
 }

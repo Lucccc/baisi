@@ -19,6 +19,7 @@
 		1828114E1CCFC4FD0073507B /* GLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1828114D1CCFC4FD0073507B /* GLMeViewController.m */; };
 		182811511CCFC90E0073507B /* GLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811501CCFC90E0073507B /* GLTabBar.m */; };
 		182811541CCFD16C0073507B /* UIView+GLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811531CCFD16C0073507B /* UIView+GLExtension.m */; };
+		182811581CD09BD30073507B /* UIBarButtonItem+GLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 182811571CD09BD30073507B /* UIBarButtonItem+GLExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		182811521CCFD16C0073507B /* UIView+GLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GLExtension.h"; sourceTree = "<group>"; };
 		182811531CCFD16C0073507B /* UIView+GLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GLExtension.m"; sourceTree = "<group>"; };
 		182811551CCFD19A0073507B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		182811561CD09BD30073507B /* UIBarButtonItem+GLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+GLExtension.h"; sourceTree = "<group>"; };
+		182811571CD09BD30073507B /* UIBarButtonItem+GLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+GLExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,24 +119,8 @@
 		1828110C1CCFB2370073507B /* 百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
-				182811101CCFB2370073507B /* AppDelegate.h */,
-				182811111CCFB2370073507B /* AppDelegate.m */,
-				182811401CCFBAE10073507B /* GLTabBarController.h */,
-				182811411CCFBAE10073507B /* GLTabBarController.m */,
-				182811431CCFC4BA0073507B /* GLEssenceViewController.h */,
-				182811441CCFC4BA0073507B /* GLEssenceViewController.m */,
-				182811461CCFC4DA0073507B /* GLNewViewController.h */,
-				182811471CCFC4DA0073507B /* GLNewViewController.m */,
-				182811491CCFC4EE0073507B /* GLFriendTrendsViewController.h */,
-				1828114A1CCFC4EE0073507B /* GLFriendTrendsViewController.m */,
-				1828114C1CCFC4FD0073507B /* GLMeViewController.h */,
-				1828114D1CCFC4FD0073507B /* GLMeViewController.m */,
-				1828114F1CCFC90E0073507B /* GLTabBar.h */,
-				182811501CCFC90E0073507B /* GLTabBar.m */,
+				182811591CD0A0DE0073507B /* classes */,
 				1828110D1CCFB2370073507B /* Supporting Files */,
-				182811521CCFD16C0073507B /* UIView+GLExtension.h */,
-				182811531CCFD16C0073507B /* UIView+GLExtension.m */,
-				182811551CCFD19A0073507B /* PrefixHeader.pch */,
 			);
 			path = "百思不得姐";
 			sourceTree = "<group>";
@@ -143,7 +130,6 @@
 			children = (
 				182811191CCFB2370073507B /* Assets.xcassets */,
 				1828111E1CCFB2370073507B /* Info.plist */,
-				1828110E1CCFB2370073507B /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -164,6 +150,193 @@
 				182811341CCFB2370073507B /* Info.plist */,
 			);
 			path = "百思不得姐UITests";
+			sourceTree = "<group>";
+		};
+		182811591CD0A0DE0073507B /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				1828115A1CD0A1310073507B /* Essence */,
+				1828115C1CD0A16E0073507B /* New */,
+				1828115E1CD0A1980073507B /* FriendTrends */,
+				1828115D1CD0A18B0073507B /* Me */,
+				1828116D1CD0A2A30073507B /* Other */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		1828115A1CD0A1310073507B /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				1828116C1CD0A2730073507B /* Model */,
+				1828116B1CD0A2720073507B /* View */,
+				1828116A1CD0A2700073507B /* Controller */,
+			);
+			name = Essence;
+			sourceTree = "<group>";
+		};
+		1828115C1CD0A16E0073507B /* New */ = {
+			isa = PBXGroup;
+			children = (
+				182811691CD0A2590073507B /* Model */,
+				182811681CD0A2580073507B /* View */,
+				182811671CD0A2560073507B /* Controller */,
+			);
+			name = New;
+			sourceTree = "<group>";
+		};
+		1828115D1CD0A18B0073507B /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				182811661CD0A23A0073507B /* Model */,
+				182811651CD0A2380073507B /* View */,
+				182811641CD0A2360073507B /* Controller */,
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		1828115E1CD0A1980073507B /* FriendTrends */ = {
+			isa = PBXGroup;
+			children = (
+				182811631CD0A2290073507B /* Model */,
+				182811621CD0A2260073507B /* View */,
+				1828115F1CD0A2090073507B /* Controller */,
+			);
+			name = FriendTrends;
+			sourceTree = "<group>";
+		};
+		1828115F1CD0A2090073507B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				182811491CCFC4EE0073507B /* GLFriendTrendsViewController.h */,
+				1828114A1CCFC4EE0073507B /* GLFriendTrendsViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		182811621CD0A2260073507B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		182811631CD0A2290073507B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		182811641CD0A2360073507B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1828114C1CCFC4FD0073507B /* GLMeViewController.h */,
+				1828114D1CCFC4FD0073507B /* GLMeViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		182811651CD0A2380073507B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		182811661CD0A23A0073507B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		182811671CD0A2560073507B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				182811461CCFC4DA0073507B /* GLNewViewController.h */,
+				182811471CCFC4DA0073507B /* GLNewViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		182811681CD0A2580073507B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		182811691CD0A2590073507B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1828116A1CD0A2700073507B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				182811431CCFC4BA0073507B /* GLEssenceViewController.h */,
+				182811441CCFC4BA0073507B /* GLEssenceViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1828116B1CD0A2720073507B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1828116C1CD0A2730073507B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1828116D1CD0A2A30073507B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				182811701CD0A2EF0073507B /* View */,
+				1828116F1CD0A2ED0073507B /* Controller */,
+				1828116E1CD0A2C30073507B /* Category */,
+				182811101CCFB2370073507B /* AppDelegate.h */,
+				182811111CCFB2370073507B /* AppDelegate.m */,
+				182811551CCFD19A0073507B /* PrefixHeader.pch */,
+				1828110E1CCFB2370073507B /* main.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		1828116E1CD0A2C30073507B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				182811521CCFD16C0073507B /* UIView+GLExtension.h */,
+				182811531CCFD16C0073507B /* UIView+GLExtension.m */,
+				182811561CD09BD30073507B /* UIBarButtonItem+GLExtension.h */,
+				182811571CD09BD30073507B /* UIBarButtonItem+GLExtension.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		1828116F1CD0A2ED0073507B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				182811401CCFBAE10073507B /* GLTabBarController.h */,
+				182811411CCFBAE10073507B /* GLTabBarController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		182811701CD0A2EF0073507B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1828114F1CCFC90E0073507B /* GLTabBar.h */,
+				182811501CCFC90E0073507B /* GLTabBar.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +473,7 @@
 				182811481CCFC4DA0073507B /* GLNewViewController.m in Sources */,
 				182811541CCFD16C0073507B /* UIView+GLExtension.m in Sources */,
 				1828114B1CCFC4EE0073507B /* GLFriendTrendsViewController.m in Sources */,
+				182811581CD09BD30073507B /* UIBarButtonItem+GLExtension.m in Sources */,
 				182811451CCFC4BA0073507B /* GLEssenceViewController.m in Sources */,
 				1828114E1CCFC4FD0073507B /* GLMeViewController.m in Sources */,
 				182811511CCFC90E0073507B /* GLTabBar.m in Sources */,

@@ -17,8 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //设置导航栏内容
+    self.navigationItem.title = @"我的关注";
+
+    //设置导航栏左边内容
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsClick)];
+    
+    //设置背景颜色
+    self.view.backgroundColor = GLGlobalBg;
+
 }
 
+-(void)friendsClick{
+    GLLog(@"%s",__func__);
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

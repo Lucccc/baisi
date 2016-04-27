@@ -17,6 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //设置导航栏内容
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    //设置导航栏左边内容
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(tagClick)];
+    
+    //设置背景颜色
+    self.view.backgroundColor = GLGlobalBg;
+    
+}
+
+-(void)tagClick{
+    GLLog(@"%s",__func__);
+    
 }
 
 - (void)didReceiveMemoryWarning {
