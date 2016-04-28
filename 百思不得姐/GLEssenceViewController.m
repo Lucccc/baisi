@@ -26,7 +26,11 @@
     //设置背景颜色
     self.view.backgroundColor = GLGlobalBg;
     
+    
+    
 }
+
+
 
 -(void)tagClick{
     GLLog(@"%s",__func__);

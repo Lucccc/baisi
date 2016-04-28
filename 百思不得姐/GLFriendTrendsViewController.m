@@ -7,10 +7,12 @@
 //
 
 #import "GLFriendTrendsViewController.h"
+#import "GLRecommendViewController.h"
 
 @interface GLFriendTrendsViewController ()
 
 @end
+
 
 @implementation GLFriendTrendsViewController
 
@@ -25,11 +27,16 @@
     
     //设置背景颜色
     self.view.backgroundColor = GLGlobalBg;
+    
 
 }
 
+
+
 -(void)friendsClick{
     GLLog(@"%s",__func__);
+    GLRecommendViewController *vc = [[GLRecommendViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 - (void)didReceiveMemoryWarning {

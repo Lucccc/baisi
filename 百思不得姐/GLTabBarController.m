@@ -12,6 +12,7 @@
 #import "GLEssenceViewController.h"
 #import "GLFriendTrendsViewController.h"
 #import "GLTabBar.h"
+#import "GLNavigationController.h"
 
 @implementation GLTabBarController
 
@@ -95,10 +96,10 @@
     
     
     //包装一个导航控制器 添加导航控制器tabbarcontroller的子控制器
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    GLNavigationController *nav = [[GLNavigationController alloc]initWithRootViewController:vc];
     
     //设置导航背景颜色
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    
     [self addChildViewController:nav];
 
     
