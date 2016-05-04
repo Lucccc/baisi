@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GLTabBarController.h"
+#import "GLPushGuideView.h"
 
 
 @interface AppDelegate ()
@@ -30,6 +31,9 @@
     
     //显示窗口
     [self.window makeKeyAndVisible];
+    
+    [GLPushGuideView show];
+    
     
     return YES;
 }

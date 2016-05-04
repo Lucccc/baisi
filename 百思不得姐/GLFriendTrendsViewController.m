@@ -8,6 +8,7 @@
 
 #import "GLFriendTrendsViewController.h"
 #import "GLRecommendViewController.h"
+#import "GLLoginRegisterViewController.h"
 
 @interface GLFriendTrendsViewController ()
 
@@ -42,6 +43,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)loginRegister:(id)sender {
+    GLLoginRegisterViewController *login = [[GLLoginRegisterViewController alloc]init];
+    [self presentViewController:login animated:YES completion:nil];
+    
+    
+    
+    
 }
 
 /*

@@ -7,6 +7,7 @@
 //
 
 #import "GLEssenceViewController.h"
+#import "GLRecommendTagsViewController.h"
 
 @interface GLEssenceViewController ()
 
@@ -33,7 +34,9 @@
 
 
 -(void)tagClick{
-    GLLog(@"%s",__func__);
+   
+    GLRecommendTagsViewController *tagVC = [[GLRecommendTagsViewController alloc]init];
+    [self.navigationController pushViewController:tagVC animated:YES];
     
 }
 
