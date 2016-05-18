@@ -7,6 +7,7 @@
 //
 
 #import "GLTabBar.h"
+#import "GLPublishViewController.h"
 @interface GLTabBar()
 /**
  *  发布按钮
@@ -26,6 +27,8 @@
         UIButton *publishButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
+        //添加点击事件
+        [publishButton addTarget:self action:@selector(publishButtonClick) forControlEvents:UIControlEventTouchUpInside];
        //设置按钮frame
         publishButton.size = publishButton.currentBackgroundImage.size;
         [self addSubview:publishButton];
@@ -33,6 +36,11 @@
         self.publishButton = publishButton;
     }
     return self;
+}
+
+-(void)publishButtonClick{
+    GLPublishViewController *publishVC = [[GLPublishViewController alloc]init];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVC animated:NO completion:nil];
 }
 
 -(void)layoutSubviews{

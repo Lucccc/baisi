@@ -49,6 +49,11 @@
     
     
 }
+- (IBAction)btnClick {
+    GLLogFunc;
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
 
 //设置控制器状态栏围白色
 - (UIStatusBarStyle)preferredStatusBarStyle{
